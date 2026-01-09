@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Programming Languages</title>
+
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body{
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        max-width: 900px;
+        width: 95%;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(8px);
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        color: #fff;
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    p{
+        text-align: center;
+        margin-bottom: 25px;
+        opacity: 0.9;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .card{
+        background: rgba(255,255,255,0.15);
+        padding: 18px;
+        border-radius: 14px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .card a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .card:hover{
+        transform: translateY(-6px) scale(1.02);
+        background: rgba(255,255,255,0.25);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Programming Languages</h1>
+    <p>Click any language to start learning</p>
+
+    <div class="grid">
+        <div class="card"><a href="c.html" target="_blank">C</a></div>
+        <div class="card"><a href="cpp.html" target="_blank">C++</a></div>
+        <div class="card"><a href="java.html" target="_blank">Java</a></div>
+        <div class="card"><a href="python.html" target="_blank">Python</a></div>
+        <div class="card"><a href="javascript.html" target="_blank">JavaScript</a></div>
+        <div class="card"><a href="php.html" target="_blank">PHP</a></div>
+        <div class="card"><a href="sql.html" target="_blank">SQL</a></div>
+        <div class="card"><a href="HTML.html" target="_blank">HTML</a></div>
+        <div class="card"><a href="css.html" target="_blank">CSS</a></div>
+    </div>
+</div>
+
+</body>
+</html>
